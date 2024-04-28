@@ -1,0 +1,101 @@
+.header {
+
+    &-row {
+        padding: 0 60px;
+
+        &__top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // border-bottom: 1px solid rgb(201, 197, 197);
+
+            @include media(768) {
+                display: flex;
+            }
+        }
+
+        &__topRight {
+            display: flex;
+            gap: 15px;
+        }
+
+        &__topLeft {
+            display: flex;
+            gap: 15px;
+
+            @include media(768) {
+                display: none;
+            }
+        }
+
+        &__top {
+            &-shop {
+                @include media(768) {
+                    display: none;
+                }
+            }
+
+            &-account {
+                @include media(768) {
+                    display: none;
+                }
+            }
+        }
+
+        &__menuIcon {
+            display: none;
+
+            @include media(768) {
+                display: block;
+            }
+        }
+
+        &__search {
+            display: none;
+
+            @include media(768) {
+                display: block;
+            }
+        }
+    }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        border-top: 1px solid rgb(201, 197, 197);
+
+        @include media(690) {
+            display: none;
+        }
+
+        &__links {
+            margin-top: 15px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 44px;
+
+            @include media(850) {
+                gap: 30px;
+            }
+
+            @include media(730) {
+                gap: 20px;
+            }
+        }
+
+        &__link {
+            font-family: "Montserrat" sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #726E8D;
+            line-height: 21.6px;
+
+            &:hover {
+                color: $black-color;
+            }
+        }
+    }
+}

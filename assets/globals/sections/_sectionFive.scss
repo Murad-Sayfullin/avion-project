@@ -1,0 +1,63 @@
+.sectionFive {
+    &-row {
+        display: flex;
+
+        @include media(900){
+            flex-direction: column;
+        }
+
+        &__left {
+            padding: 80px;
+
+            &-title {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 33.6px;
+                font-family: "Montserrat" sans-serif;
+            }
+
+            &-subtitle {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21.6px;
+                font-family: "Montserrat" sans-serif;
+            }
+
+            &-button {
+                display: flex;
+                margin-top: 60px;
+            }
+
+            &-btn {
+                padding: 20px;
+                color: #554d4d;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                font-family: "Montserrat" sans-serif;
+                background-color: #F9F9F9;
+
+                @include media(900){
+                    width: 100%;
+                }
+
+                &:hover {
+                    background-color: #2A254B;
+                    color: #F9F9F9;
+                }
+            }
+        }
+
+        &__right{
+            &-img{
+                @include media(1100){
+                    width: 500px;
+                }
+
+                @include media(900){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

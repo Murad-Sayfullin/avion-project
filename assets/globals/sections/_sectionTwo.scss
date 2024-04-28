@@ -1,0 +1,78 @@
+.sectionTwo {
+    margin-top: 80px;
+
+    &-row {
+        padding: 0 60px;
+
+        &__top {
+            display: flex;
+            align-items: center;
+
+            &-title {
+                font-weight: 400;
+                font-size: 32px;
+                font-family: "Montserrat" sans-serif;
+            }
+        }
+
+        &__bottom {
+            display: flex;
+            margin-top: 30px;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            &-cartOne {
+                flex-shrink: 1;
+            }
+
+            &-cartOne {
+                img {
+                    @include media(500) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+        &__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+
+            &-btn {
+                margin-top: 30px;
+                padding: 20px;
+                color: #554d4d;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                font-family: "Montserrat" sans-serif;
+                background-color: #F9F9F9;
+
+                &:hover {
+                    background-color: #2A254B;
+                    color: #F9F9F9;
+                }
+
+                @include media(700) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.sectionTwo-cartOne__text {
+    font-family: "Montserrat" sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.sectionTwo-cartOne__price {
+    font-family: "Montserrat" sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
